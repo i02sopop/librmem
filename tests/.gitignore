@@ -1,0 +1,5 @@
+/.deps/
+/Makefile
+/Makefile.in
+/check_c_project*
+/test-suite.log

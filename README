@@ -1,0 +1,32 @@
+ librmem
+=========
+
+librmem is a personal library to manage memory malloc and free easily in C. The
+src/ directory include the C source files of the project and the include/
+directory has the header files.
+
+ Copyright
+===========
+The copyright of this application own to the people included at AUTHORS file. This
+file include all the people that have done any contribution to the project.
+
+ License
+=========
+This program is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software Foundation,
+either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this
+program. If not, see <http://www.gnu.org/licenses/>.
+
+ Development
+=============
+The development of this project use the distributed revision control system git,
+and you can find the repository in https://github.com/i02sopop/librmem. If you
+want to colaborate in the project, either developing code, writing documentation
+or any other type of task please read first the CONTRIBUTE file and, in case of
+doubt, please contact with palvarez@ritho.net.

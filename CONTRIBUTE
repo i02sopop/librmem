@@ -1,0 +1,140 @@
+ Contribute to librmem project
+===============================
+
+There are six main ways to contribute to this project. The first one
+is test the program and report the bugs founded. If you find any bug,
+please visit the Testers section of this document to know how to
+report it to us.
+
+The next way of collaboration with the project is to donate some money
+to help in the mainteinance of the project. This money can be assigned
+to maintain the project's server (change hardware, renew the domain,
+...) or to pay a developer to work full time in the project. To know
+how to donate money to the project, please visit the Donations section
+in this document.
+
+If you prefer to translate either the program, the documentation or
+the web page of the project in any of the languages needs, please
+visit the Translators section of this document.
+
+If you want to generate or modify the project's documentation, please
+visit the Documenters section of this document.
+
+If you want to contribute in the administration of the project's
+server (where we have the webpage, the git repository and all the
+resources of the project), please visit the Administrators section of
+this document.
+
+And, finally, if you want to help in the coding of the project, please
+visit the Developers section of this document.
+
+If you find another way to collaborate with the project, please
+contact with palvarez@ritho.net exposing your idea.
+
+ Testers
+=========
+
+The tests are one of the most important part of any project, because
+is the way to check that the software is working as expected. If you
+want to collaborate with the project making tests you have three ways
+to do it:
+
+* Test the software by hand. It's important to test every corner case
+  you can imagine and report every error you find.
+* Create test case to test automatically the diferent functionality of
+  the software and some error cases. This test cases can be unitary
+  tests, black box tests, white box tests, ... Basically any type of
+  test you can tests :).
+* Execute the existant automatic tests, report the bugs when found
+  them or fix the tests if the source code has change and the test is
+  not valid anymore as is.
+
+The automatic tests are in the tests directory (what a surprise!), and
+to execute them you have to run "make check" in the top directory.
+When you run the tests you can see the results and errors generated
+both in the screen and in a file generated in the tests directory.
+
+To report a bug please visit the project page at github
+(https://github.com/i02sopop/snag), click on the Issues section and
+add a new issue. Please, be as descriptive as possible with all the
+information you can and add an email address to contact with you if
+needed.
+
+Remember that the important thing of the tests are find errors, so
+it's important to test both the usual functionality and unusual
+situations that never have to happen, and don't feel bad about
+discover a bug, remember you are helping the project reporting it.
+
+ Donations
+===========
+
+Actually we don't have defined a donation method to the project, but
+if you want to donate some money or hardware (computers, keyboards,
+monitors, ...), please contact <palvarez@ritho.net> or, make your
+proposal and we find the way to make the donation.
+
+ Translators
+=============
+
+The original language of the project is english, and it have a
+translation into spanish. The translations are managed with gettext,
+so if you want to enhace a translation or add a new one you should
+check the po subdirectory. In that directory you can find one po file
+per language, so you can edit the file for the language you'ree interested
+in and make the needed changes.
+
+If you want to start a translation to a new language you can copy one
+of the po files (the language you're translating from) to a new po file
+and start the translation.
+
+For small changes you can do directly a PR with your changes, but if you
+want to do deeper changes it's better to add a new task to github and
+asign it to you.
+
+For now we have not consider the case of having several people that want to
+do a translation to the same language, but if we reach that case we will
+design one lead translator (to decide between all) to coordinate the work.
+
+ Documenters
+=============
+
+Documentation, both technical and user oriented, is a really important part
+of the project. Apart from the documentation at the code, we have documentation
+both in the docs subdirectory and in the github wiki, so feel free to contribute
+to any of the places.
+
+If you are going to document more than some few lines be sure to have a task
+opened in github and assign it to yourself before start the work to avoid
+doing the same work by two different people.
+
+When documenting, try to be clear, concise and with a same style on all the
+text, and, if you are not sure about something in particular, please ask
+any question to palvarez@ritho.net.
+
+ Administrators
+================
+
+The project needs administrators to update the website, create and maintain
+the email lists, ... In the github issues page you can find some tasks to
+do by the administrators sorted by difficulty and priority. If you want
+to do any of the tasks write to <palvarez@ritho.net> and assign yourself
+the issue in order to be coordinated.
+
+ Developers
+============
+
+Snag is handled in a git repository that you can find in the github's
+project page at https://github.com/i02sopop/snag. In github we manage
+all the functionalities, bugs, tasks and so on, so if you want to
+collaborate adding new tasks or doing some of them you should go
+the github's issues to read if the task is already planned or if
+someone is doing already the task.
+
+When the time comes, we'll create a list for developers, users, bugs,
+commits, ..., but if you want to collaborate in the project write
+palvarez@ritho.net to coordinate the work.
+
+The source code is in the src directory, and the header files are in
+the include directory. You have also some documentation in the docs
+directory, so feel free to start digging in those directories to learn
+about the code and start making changes.

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Bootstrapping librmem"
+if [ -f Makefile ]; then
+	make -k maintainer-clean
+fi
+autoreconf -fvi --include=m4
+
+echo
+echo "Now run configure with your desired options, for instance:"
+echo "  ./configure CFLAGS=-g"
+echo

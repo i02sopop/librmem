@@ -1,0 +1,8 @@
+/*.o
+/Makefile
+/Makefile.in*
+/TAGS
+/.deps
+/*.la
+/*.lo
+/.libs
