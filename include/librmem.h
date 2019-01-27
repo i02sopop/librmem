@@ -19,6 +19,7 @@
 #ifndef __LIBRMEM_H__
 #define __LIBRMEM_H__
 
+#include <stdarg.h>
 #include <stdlib.h>
 
 void *xmalloc(size_t size);

@@ -19,9 +19,7 @@
 #define _GNU_SOURCE
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <stdarg.h>
 
 #include <librlog.h>
 #include <librmem.h>
