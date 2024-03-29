@@ -1,5 +1,5 @@
 /*********************************************************************************
- * Copyright (c) 2019 librmem project (see AUTHORS)                              *
+ * Copyright (c) 2019-2024 librmem project (see AUTHORS)                         *
  *                                                                               *
  * This file is part of librmem.                                                 *
  *                                                                               *
@@ -29,7 +29,7 @@ xmalloc(size_t size) {
 	void *dst;
 
 	if ((dst = malloc(size)) == NULL) {
-		xerror("malloc(%lu)", (unsigned long)size);
+		xerrorf("malloc(%lu)", (unsigned long)size);
 		abort();
 	}
 
@@ -41,7 +41,7 @@ xcalloc(size_t count, size_t size) {
 	void *dst;
 
 	if ((dst = calloc(count, size)) == NULL) {
-		xerror("calloc(%lu, %lu)", (unsigned long)count, (unsigned long)size);
+		xerrorf("calloc(%lu, %lu)", (unsigned long)count, (unsigned long)size);
 	}
 
 	return dst;
@@ -55,7 +55,7 @@ zmalloc(size_t size) {
 void *
 xrealloc(void *dst, size_t size) {
 	if ((dst = realloc(dst, size)) == NULL) {
-		xerror("realloc(%lu)", (unsigned long)size);
+		xerrorf("realloc(%lu)", (unsigned long)size);
 	}
 
 	return dst;
@@ -66,7 +66,7 @@ xstrdup(const char *orig) {
 	char *dst;
 
 	if ((dst = strdup(orig)) == NULL) {
-		xerror("strdup(%lu)", (unsigned long)strlen(orig));
+		xerrorf("strdup(%lu)", (unsigned long)strlen(orig));
 	}
 
 	return dst;
@@ -77,7 +77,7 @@ xstrndup(const char *orig, size_t n) {
 	char *dst;
 
 	if ((dst = strndup(orig, n)) == NULL) {
-		xerror("strndup(%lu)", (unsigned long)strlen(orig));
+		xerrorf("strndup(%lu)", (unsigned long)strlen(orig));
 	}
 
 	return dst;
